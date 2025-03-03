@@ -16,3 +16,7 @@ To run an Optuna study:
 
 python train.py --data_dir /path/to/coco/train2017 --ann_file /path/to/instances_train2017.json --tune
 
+
+https://bbycroft.net/llm
+
+
