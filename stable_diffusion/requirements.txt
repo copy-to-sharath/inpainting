@@ -1,0 +1,11 @@
+# requirements.txt
+torch>=1.10
+torchvision
+pytorch-lightning>=1.5
+mlflow
+tensorboard
+diffusers
+transformers
+scikit-learn
+omegaconf
+PyYAML

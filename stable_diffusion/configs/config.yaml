@@ -1,0 +1,22 @@
+experiment:
+  name: "synthetic-coco-transformer"
+  seed: [42, 123]      # multiple initializations
+  max_epochs: 10
+  batch_size: 16
+  learning_rate: 0.001
+
+model:
+  norm_type: "batch"   # Options: "batch", "group", "layer"
+  num_classes: 80      # For COCO (or adjust if using a subset)
+
+training:
+  precision: 16        # Use mixed precision for GPU memory optimization
+
+logging:
+  mlflow: true
+  tensorboard: true
+
+paths:
+  coco_data: "data/coco/"
+  synthetic_data_dir: "data/coco/synthetic/"
+  model_save_dir: "models/weights/"
